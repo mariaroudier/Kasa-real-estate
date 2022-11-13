@@ -9,7 +9,7 @@ function Home() {
         <section style={{display: 'flex',position:'relative',marginBottom:'99px'
 
         }}>
-          <img src={BackgroungNature} alt="Background nature" style={{width: '100%',borderRadius:'25px'
+          <img src={BackgroungNature} alt="Background nature" style={{width: '100%',borderRadius:'25px',filter: 'brightness(0.7)',
           }} />
           <h1 style={{position: 'absolute',margin:'0',fontSize:'40px',color:'white',top:'50%',left:'50%',transform:'translate(-50%, -50%)',textAlign: 'center',
           }}>Chez vous, partout et ailleurs</h1>
