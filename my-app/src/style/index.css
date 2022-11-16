@@ -7,9 +7,14 @@ body {
   box-sizing: border-box;
   text-decoration: none;
   margin: 0;
+  justify-content: space-between;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.hide{
+  display: none;
 }

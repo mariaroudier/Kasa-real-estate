@@ -1,16 +1,22 @@
+#section_dropdowns{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
 
+}
 
 .container_dropdown {
       display:flex;
       flex-direction:column;
       width: 80%;
+      align-self: center;
       background-color:#F6F6F6;
       margin-top: 30px;
       border-radius: 5px;
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-      -o-border-radius: 5px;
+      -webkit-border-radius:;
+      -moz-border-radius:;
+      -ms-border-radius:;
+      -o-border-radius:;
 }
 .dropdown_titre_box {
       display:flex;
@@ -31,6 +37,10 @@
 }
 
 .arrow_up {
+      display: none;
+      place-self:center;
+}
+.arrow_down {
       place-self:center;
 }
 

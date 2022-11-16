@@ -7,7 +7,6 @@ function About() {
             <Banner/>
             <div>
                 <Dropdown/>
-
             </div>
 
         </main>
