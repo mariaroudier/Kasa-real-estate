@@ -1,49 +1,69 @@
 import Logo from "../img/Logo_red.png"
+import './header.css'
 
 function Header() {
+
+    function toChooseStyle(page) {
+        switch (page) {
+            case "home":
+                return (
+                    <ul className="nav">
+                        <li className="box-links"><a className="links underlined" href="/">Accueil</a></li>
+                        <li className="box-links"><a className="links" href="/about">A Propos</a></li>
+                    </ul>
+                )
+            
+            case "about" :
+                return (
+                    <ul className="nav">
+                        <li className="box-links"><a className="links" href="/">Accueil</a></li>
+                        <li className="box-links"><a className="links underlined" href="/about">A Propos</a></li>
+                    </ul>
+                )
+            
+            default :
+                return (
+                    <ul className="nav">
+                        <li className="box-links"><a className="links" href="/">Accueil</a></li>
+                        <li className="box-links"><a className="links" href="/about">A Propos</a></li>
+                    </ul>
+                )
+        }
+    }
+
     if(window.location.pathname === "/") {
-        return (
-            <header style={{display:'flex', justifyContent:'space-between',paddingLeft:'100px',paddingRight:'100px', alignItems:'center'}}>
-                <img src={Logo} alt="Logo Kasa" style={{display:'block',paddingTop:'30px',paddingBottom:'40px'}}/>
+        return(
+            <header>
+                <img className="logo" src={Logo} alt="Logo Kasa"/>
                     <div>
                         <nav>
-                            <ul style={{display:'flex',flexDirection:'row',listStyleType:'none',}}>
-                                <li style={{paddingLeft:'57px'}}><a href="/" style={{color:'#FF6060', textDecoration:'revert'}}>Accueil</a></li>
-                                <li style={{paddingLeft:'57px'}}><a href="/about" style={{color:'#FF6060'}}>A Propos</a></li>
-                            </ul>
+                            {toChooseStyle("home")}
                         </nav>
                     </div>
             </header>
         )
     } else if(window.location.pathname === "/about") {
-        return (
-            <header style={{display:'flex', justifyContent:'space-between',paddingLeft:'100px',paddingRight:'100px', alignItems:'center'}}>
-                <img src={Logo} alt="Logo Kasa" style={{display:'block',paddingTop:'30px',paddingBottom:'40px'}}/>
+        return(
+            <header>
+                <img className="logo" src={Logo} alt="Logo Kasa"/>
                     <div>
                         <nav>
-                            <ul style={{display:'flex',flexDirection:'row',listStyleType:'none',}}>
-                                <li style={{paddingLeft:'57px'}}><a href="/" style={{color:'#FF6060'}}>Accueil</a></li>
-                                <li style={{paddingLeft:'57px'}}><a href="/about" style={{color:'#FF6060', textDecoration:'revert'}}>A Propos</a></li>
-                            </ul>
+                            {toChooseStyle("about")}
                         </nav>
                     </div>
             </header>
         )
-    } else {
-        return (
-            <header style={{display:'flex', justifyContent:'space-between',paddingLeft:'100px',paddingRight:'100px', alignItems:'center'}}>
-                <img src={Logo} alt="Logo Kasa" style={{display:'block',paddingTop:'30px',paddingBottom:'40px'}}/>
+    } else  {
+        return(
+            <header>
+                <img className="logo" src={Logo} alt="Logo Kasa"/>
                     <div>
                         <nav>
-                            <ul style={{display:'flex',flexDirection:'row',listStyleType:'none',}}>
-                                <li style={{paddingLeft:'57px'}}><a href="/" style={{color:'#FF6060'}}>Accueil</a></li>
-                                <li style={{paddingLeft:'57px'}}><a href="/about" style={{color:'#FF6060'}}>A Propos</a></li>
-                            </ul>
+                            {toChooseStyle("default")}
                         </nav>
                     </div>
             </header>
         )
     }
-      
 }
 export default Header;

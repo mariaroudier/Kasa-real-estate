@@ -1,5 +1,5 @@
-import Banner from '../../components/Banner/Banner.jsx'
-import Dropdown from '../../components/Dropdown/Dropdown.jsx'
+import Banner from '../../components/Banner/Banner'
+import Dropdown from '../../components/Dropdown/Dropdown'
 import './about.css'
 
 const pointsAbout = [

@@ -2,12 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './style/index.css';
-import './components/Dropdown/style.css'
 import reportWebVitals from './reportWebVitals';
-import Home from './pages/Home';
-import About from './pages/About';
-import Lodgement from './pages/Lodgement';
-import NotFound from './pages/NotFound';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Lodgement from './pages/Lodgement/Lodgement';
+import NotFound from './pages/notFound/NotFound';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
@@ -20,10 +19,7 @@ root.render(
             <Route path="/about" element={<About/>}/>
             <Route path="/lodgement" element={<Lodgement/>}/>
             <Route path="/notfound" element={<NotFound/>}/>
-
         </Routes>
-
-
         <Footer />
     </BrowserRouter>
 )

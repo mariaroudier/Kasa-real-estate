@@ -1,0 +1,60 @@
+.main-notfound {
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      padding-left: 100px;
+      padding-right: 100px;
+}
+.number-error {
+      color:#FF6060;
+      font-size:288px;
+      font-weight:700;
+      margin-bottom:66px
+}
+.error-message {
+      color:#FF6060;
+      font-size:36px;
+      margin-bottom:182px;
+}
+.getback-link{
+      color:#FF6060;
+      font-size:18px;
+      text-decoration:revert;
+      text-align: center;
+}
+
+
+@media screen and (min-width: 415px) and (max-width:768px) {
+      .number-error {
+            font-size:200px;
+            margin-bottom:40px
+      }
+      .error-message {
+            font-size:30px;
+            margin-bottom:80px;
+            text-align: center;
+      }
+}
+
+@media screen and (max-width: 415px) {
+      .main-notfound {
+            padding-left: 19px;
+            padding-right: 19px;
+      }
+
+      .number-error {
+            font-size:150px;
+            margin-bottom:20px
+      }
+      .error-message {
+            font-size:20px;
+            margin-bottom:50px;
+            text-align: center;
+      }
+      .getback-link{
+            font-size:14px;
+
+      }
+
+
+}

@@ -1,0 +1,25 @@
+.main-about {
+      padding-left:100px;
+      padding-right:100px;
+      margin-bottom: 30px;
+}
+.box-for-points-about{
+      display: flex;
+      flex-direction: column;
+
+}
+@media screen and (min-width: 415px) and (max-width:768px) {
+      .main-about {
+            padding-left:50px;
+            padding-right:50px;
+      }
+}
+@media screen and (max-width: 415px) {
+    
+      .main-about {
+            padding-left:19px;
+            padding-right:19px;
+      }
+
+
+}
