@@ -1,0 +1,15 @@
+.slideshow-img {
+      width:300px
+}
+
+.chevron-left,.chevron-right,.quantity-text {
+      position: absolute;
+}
+
+
+@media screen and (min-width: 415px) and (max-width:768px) {
+}
+
+
+@media screen and (max-width: 415px) {
+}

@@ -1,7 +1,7 @@
 .main-about {
       padding-left:100px;
       padding-right:100px;
-      margin-bottom: 30px;
+      margin-bottom: 99px;
 }
 .box-for-points-about{
       display: flex;
@@ -15,10 +15,10 @@
       }
 }
 @media screen and (max-width: 415px) {
-    
       .main-about {
             padding-left:19px;
             padding-right:19px;
+            margin-bottom: 0;
       }
 
 

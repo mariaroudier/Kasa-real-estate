@@ -1,4 +1,4 @@
-section{
+.banner-box{
       display:flex;
       position:relative;
       margin-bottom:99px
@@ -22,17 +22,25 @@ section{
       transform:translate(-50%, -50%);
       text-align:center
 }
-.zero-margin{
+/* .zero-margin{
       margin: 0;
-}
+} */
 
 
 @media screen and (min-width: 415px) and (max-width:768px) {
+      .banner-box{
+            margin-bottom:60px
+      }
+
       .banner-titre {
             font-size:30px;
       }
 }
 @media screen and (max-width: 415px) {
+      .banner-box{
+            margin-bottom:40px
+      }
+
       .banner-img {
             width:100%;
             border-radius:15px;
