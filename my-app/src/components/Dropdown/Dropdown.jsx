@@ -16,7 +16,7 @@ function Dropdown({titre, description}) {
                               <h1 className="dropdown-titre" >{titre}</h1>
                               {open ? (<img className="arrow arrow-up" src={ArrowUp} alt="Arrow up icon"/>) : <img className="arrow arrow-down" src={ArrowDown} alt="Arrow down icon"/> }
                         </div>
-                        {open ? (<p className="dropdown-text" >{description}</p>) : ""}
+                              {open ? (<div className='dropdown-text'>{description}</div>) : ""}
                   </div>  
             )
 }

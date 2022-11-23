@@ -1,0 +1,23 @@
+.rating{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: end;
+      gap:10px
+}
+@media screen and (min-width: 415px) and (max-width:768px) {
+      .star{
+            width: 20px;
+      }
+      
+
+}
+
+
+@media screen and (max-width: 415px) {
+
+      
+
+
+}

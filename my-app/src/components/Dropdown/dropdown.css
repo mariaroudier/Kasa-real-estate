@@ -32,15 +32,23 @@
 .arrow {
       place-self:center;
 }
-
-.dropdown-text {
+.dropdown-text{
       width:100%;
+      padding:18px;
+      padding-top:27px;
+
       color:#FF6060;
       font-weight:400;
       font-size: 22px;
-      padding:18px;
-      padding-top:27px;
+
+      background-color: #F6F6F6;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
 }
+
 @media screen and (min-width: 415px) and (max-width:768px) {
       .dropdown-titre-box {
             padding: 12px;
@@ -60,6 +68,7 @@
       
 }
 @media screen and (max-width: 415px) {
+
       .dropdown-titre-box {
             padding: 10px;
       }
@@ -73,7 +82,6 @@
       .arrow-down {
             width: 15px;
       }
-
       .dropdown-text {
             font-size: 15px;
       }

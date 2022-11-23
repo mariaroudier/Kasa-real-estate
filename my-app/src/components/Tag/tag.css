@@ -1,0 +1,38 @@
+.tags {
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: 26px;
+      gap: 10px;
+}
+.tag{
+      background-color: #FF6060;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+}
+.tag-text {
+      font-size: 14px;
+      color: white;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+}
+
+@media screen and (min-width: 415px) and (max-width:768px) {
+      .tags{
+            flex-wrap: wrap;
+      }
+      .tag-text {
+            font-size: 12px;
+      }
+}
+
+
+@media screen and (max-width: 415px) {
+      .tags{
+            flex-wrap: wrap;
+      }
+}
