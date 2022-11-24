@@ -8,7 +8,7 @@
       flex-direction: column;
 
 }
-@media screen and (min-width: 415px) and (max-width:768px) {
+@media screen and (min-width: 416px) and (max-width:768px) {
       .main-about {
             padding-left:50px;
             padding-right:50px;

@@ -20,18 +20,16 @@ header{
 }
 
 .box-links {
-      padding-left:57px
-}
-
-.links {
+      padding-left:57px;
       color:#FF6060
 }
+
 .underlined {
       text-decoration:underline
 }
 
 
-@media screen and (min-width: 415px) and (max-width:768px) {
+@media screen and (min-width: 416px) and (max-width:768px) {
       header {
             padding-left: 50px;
             padding-right: 50px;

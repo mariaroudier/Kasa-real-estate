@@ -6,13 +6,11 @@ import Tag from '../../components/Tag/Tag'
 import Star from '../../components/Star/Star'
 
 
-
 function Lodgement() {
     const searchParams = new URLSearchParams(document.location.search)
     const id = searchParams.get("id")
     let house;
 
-    
     housing.forEach(el => {
       if(el.id === id) {
         house = el
@@ -20,7 +18,6 @@ function Lodgement() {
     })
     if(house){
 
-    
       return (
         <main className='main-lodgement'>
           <Slideshow pictures={house.pictures} title={house.title}/>
@@ -46,15 +43,17 @@ function Lodgement() {
           </section>
                 
           <div className='dropdowns'>
-            <Dropdown titre="Description" description={house.description}/>
+            <Dropdown titre="Description" description={house.description} isSmall={true}/>
             <Dropdown titre="Equipments" description={
               house.equipments.map(util => {
                 return <p className='util' key={util}>{util}</p>
-              })}/>
+              })} isSmall={true}/>
           </div>
         </main>
       )    
-    } 
+    } else{
+      window.location.pathname = "/notfound"
+    }
     // afficher error
 }
     

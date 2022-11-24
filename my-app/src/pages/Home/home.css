@@ -45,7 +45,7 @@
       color: white;
       font-size: 18px;
 }
-@media screen and (min-width: 415px) and (max-width:768px) {
+@media screen and (min-width: 416px) and (max-width:768px) {
       .main-home {
             padding-left:50px;
             padding-right:50px

@@ -34,7 +34,7 @@
       right:20px;
 }
 
-@media screen and (min-width: 415px) and (max-width:768px) {
+@media screen and (min-width: 416px) and (max-width:768px) {
 
       .chevron-left,.chevron-right {
             width: 25px;

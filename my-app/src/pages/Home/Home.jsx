@@ -10,19 +10,15 @@ function Home() {
         <main className="main-home">
           <Banner/>
           <div className="annonces-section">
-            
               {housing.map(house => 
                   <a className='card' href={"/lodgement?id=" + house.id} key={house.id}>
                       <img className='annonce-img' src={house.cover} alt={house.title} key={house.cover}></img>
                       <p className="annonce-title" key={house.title}>{house.title}</p>
                   </a>
               )}
-            
-
           </div>
-
         </main>
-    );
+    )
 }
 
 export default Home;

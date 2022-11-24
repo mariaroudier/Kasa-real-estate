@@ -28,7 +28,7 @@ function About() {
             <Banner/>
             <div className='box-for-points-about'>
                 {pointsAbout.map((point,index) => { 
-                    return <Dropdown titre={point.titre} description={point.description} key={index}/>
+                    return <Dropdown titre={point.titre} description={point.description} key={index} isSmall={false}/>
                  })}
             </div>
 
