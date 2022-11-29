@@ -99,13 +99,15 @@
       
 }
 @media screen and (max-width: 415px) {
-
+      .container-dropdown {
+            width: 100%;
+      }
       .dropdown-titre-box {
             padding: 10px;
       }
       
       .dropdown-titre {
-            font-size:15px;
+            font-size:13px;
       }
       .arrow-up {
             width: 15px;
@@ -114,7 +116,7 @@
             width: 15px;
       }
       .dropdown-text {
-            font-size: 15px;
+            font-size: 12px;
       }
       .small-dropdown{
             margin-bottom: 0;

@@ -40,15 +40,17 @@
       .main-notfound {
             padding-left: 19px;
             padding-right: 19px;
+            padding-top: 200px;
       }
 
       .number-error {
-            font-size:150px;
-            margin-bottom:20px
+            font-size:96px;
+            margin-bottom:20px;
+            font-weight: 700;
       }
       .error-message {
-            font-size:20px;
-            margin-bottom:50px;
+            font-size:18px;
+            margin-bottom:133px;
             text-align: center;
       }
       .getback-link{

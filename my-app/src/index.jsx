@@ -1,3 +1,6 @@
+/* eslint-disable react/jsx-wrap-multilines */
+/* eslint-disable react/jsx-indent */
+/* eslint-disable */
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -11,20 +14,19 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-    <BrowserRouter>
-        <Header />
-        <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/about" element={<About/>}/>
-            <Route path="/lodgement" element={<Lodgement/>}/>
-            <Route path="/notfound" element={<NotFound/>}/>
-        </Routes>
-        <Footer />
-    </BrowserRouter>
-)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+root.render(
+  <BrowserRouter>
+    <Header />
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/about' element={<About />} />
+      <Route path='/lodgement' element={<Lodgement />} />
+      <Route path='/notfound' element={<NotFound />} />
+      <Route path='*' element={<NotFound />} />
+    </Routes>
+  </BrowserRouter>,
+);
+
+
 reportWebVitals();
