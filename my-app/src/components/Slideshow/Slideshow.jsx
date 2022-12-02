@@ -26,13 +26,13 @@ function Slideshow({ pictures, title }) {
         ? (
           <>
             <img className="slideshow-img" src={pictures[index]} alt={title} />
-            { numberOfPhotos > 1 ? <span className="slideshow-text" key={numberOfPhotos}>{`${index + 1}/${numberOfPhotos}`}</span> : ''}
+            { numberOfPhotos > 1 && window.innerWidth > 415 ? <span className="slideshow-text" key={numberOfPhotos}>{`${index + 1}/${numberOfPhotos}`}</span> : ''}
           </>
         ) : setIndex(index - numberOfPhotos)
                   && (
                   <>
                     <img className="slideshow-img" src={pictures[index]} alt={title} />
-                    <span className="slideshow-text" key={numberOfPhotos}>{`${index + 1}/${pictures.length}`}</span>
+                    { window.innerWidth > 415 ? <span className="slideshow-text" key={numberOfPhotos}>{`${index + 1}/${pictures.length}`}</span> : "" }
                   </>
                   ) }
 
@@ -40,7 +40,7 @@ function Slideshow({ pictures, title }) {
                   && (
                   <>
                     <img className="slideshow-img" src={pictures[index + numberOfPhotos]} alt={title} />
-                    <span className="slideshow-text" key={numberOfPhotos}>{`${index + numberOfPhotos + 1}/${numberOfPhotos}`}</span>
+                    { window.innerWidth > 415 ? <span className="slideshow-text" key={numberOfPhotos}>{`${index + numberOfPhotos + 1}/${numberOfPhotos}`}</span> : "" }
                   </>
                   )
         : '' }
