@@ -1,6 +1,6 @@
 .main-home {
-      padding-left:100px;
-      padding-right:100px
+      padding-left: 100px;
+      padding-right: 100px
 }
 
 .annonces-section {
@@ -11,12 +11,13 @@
       margin-bottom: 50px;
 }
 
-.card{
+.card {
       display: flex;
+      cursor: pointer;
       position: relative;
       margin-bottom: 50px;
-      background: rgb(170,64,64);
-      background: linear-gradient(0deg, rgba(170,64,64,1) 26%, rgba(255,255,255,1) 68%);
+      background: rgb(170, 64, 64);
+      background: linear-gradient(0deg, rgba(170, 64, 64, 1) 26%, rgba(255, 255, 255, 1) 68%);
 
       border-radius: 10px;
       -webkit-border-radius: 10px;
@@ -46,11 +47,13 @@
       font-size: 18px;
       width: 50%;
 }
+
 @media screen and (min-width: 416px) and (max-width:768px) {
       .main-home {
-            padding-left:50px;
-            padding-right:50px
+            padding-left: 50px;
+            padding-right: 50px
       }
+
       .annonces-section {
             gap: 40px;
       }
@@ -69,10 +72,10 @@
 
 @media screen and (max-width: 415px) {
       .main-home {
-            padding-left:19px;
-            padding-right:19px
+            padding-left: 19px;
+            padding-right: 19px
       }
-      
+
       .annonces-section {
             gap: 30px;
       }
