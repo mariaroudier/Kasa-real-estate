@@ -10,6 +10,8 @@ function Footer() {
         <p className="footer-text">© 2020 Kasa. All rights reserved</p>
       </footer>
     );
+  } else {
+    return ""
   }
 }
 export default Footer;

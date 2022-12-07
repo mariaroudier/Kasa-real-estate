@@ -1,7 +1,11 @@
 /* eslint-disable react/react-in-jsx-scope */
 import './notFound.css';
+import {useNavigate} from 'react-router-dom';
 
 function NotFound() {
+  let navigate = useNavigate()
+  navigate(`/notfound`)
+  
   return (
     <main className="main-notfound">
       <h1 className="number-error">404</h1>
